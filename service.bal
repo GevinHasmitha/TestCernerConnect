@@ -19,11 +19,11 @@ import ballerina/http;
 // import ballerina/regex;
 import ballerinax/health.clients.fhir;
 
-configurable string base = "https://fhir-ehr-code.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d";
-configurable string tokenUrl = "https://authorization.cerner.com/tenants/ec2458f2-1e24-41c8-b71b-0e701af7583d/protocols/oauth2/profiles/smart-v1/token";
-configurable string clientId = "977f278f-eb3f-411e-b2ff-16c554501d69";
+configurable string base = ?;
+configurable string tokenUrl = ?;
+configurable string clientId = ?;
 configurable string clientSecret = ?;
-configurable string[] scopes = ["system/Patient.read", "system/Patient.create", "system/Observation.read"];
+configurable string[] scopes = ?;
 
 
 http:OAuth2ClientCredentialsGrantConfig cernerOauth = {
